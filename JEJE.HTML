@@ -1,21 +1,26 @@
 <html>
 <head>
 <title>Ingresar una palabra y mediante una alerta mostrarla al revez</title>
-
+<meta charset="UTF-8">
 </head>
 <body>
-<h1>JEJEJEJJE</h1>
-<form>
-	Palabra: <input type="text" id="palabra" name="palabra" value="">
-	<button onclick="mostraralert()">presioname papi</button>
-</form>
-<script>
-function mostraralert(){
-	var cadena = document.getElementById('palabra').value;
-			 var arreglo=cadena.split('').reverse().join("");
-			 alert(arreglo);
-}
+	<h1>JEJEJEJJE</h1>
+	<form>
+		Palabra: <input type="text" id="palabra" name="palabra" value="">
+		<button onclick="mostraralert()">presioname papi</button>
+	</form>
+	<script>
+		function mostraralert(){
+			var cadena = document.getElementById('palabra').value;
+			var arreglo=cadena.split('').reverse().join("");
+			alert(arreglo);
+			postAlert();
+		}
 
-</script>
+		function postAlert(){
+			alert('Añadido sólo para que veas como funciona el pull request');
+		}
+
+	</script>
 </body>
 </html>
