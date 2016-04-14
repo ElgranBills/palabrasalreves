@@ -1,0 +1,21 @@
+<html>
+<head>
+<title>Ingresar una palabra y mediante una alerta mostrarla al revez</title>
+
+</head>
+<body>
+<h1>JEJEJEJJE</h1>
+<form>
+	Palabra: <input type="text" id="palabra" name="palabra" value="">
+	<button onclick="mostraralert()">presioname papi</button>
+</form>
+<script>
+function mostraralert(){
+	var cadena = document.getElementById('palabra').value;
+			 var arreglo=cadena.split('').reverse().join("");
+			 alert(arreglo);
+}
+
+</script>
+</body>
+</html>
